@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3350B9AD22D22BF500392CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350B9AC22D22BF500392CC7 /* AppDelegate.swift */; };
-		3350B9AF22D22BF500392CC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350B9AE22D22BF500392CC7 /* ViewController.swift */; };
+		3350B9AF22D22BF500392CC7 /* ExampleTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350B9AE22D22BF500392CC7 /* ExampleTypesVC.swift */; };
 		3350B9B222D22BF500392CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3350B9B022D22BF500392CC7 /* Main.storyboard */; };
 		3350B9B422D22BF600392CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3350B9B322D22BF600392CC7 /* Assets.xcassets */; };
 		3350B9B722D22BF600392CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3350B9B522D22BF600392CC7 /* LaunchScreen.storyboard */; };
 		3350B9C222D22BF700392CC7 /* GenericTableDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350B9C122D22BF700392CC7 /* GenericTableDataSourceTests.swift */; };
 		3350B9CD22D22BF700392CC7 /* GenericTableDataSourceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350B9CC22D22BF700392CC7 /* GenericTableDataSourceUITests.swift */; };
+		33BA9DCA22DCE7E90025C664 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA9DC922DCE7E90025C664 /* ExampleCell.swift */; };
+		33BA9DCC22DCE84C0025C664 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA9DCB22DCE84C0025C664 /* ExampleModel.swift */; };
+		33BA9DCE22DCF1120025C664 /* Example01VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA9DCD22DCF1120025C664 /* Example01VC.swift */; };
+		33BA9DD022DCF1640025C664 /* Example01Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA9DCF22DCF1640025C664 /* Example01Model.swift */; };
+		33BB646D22DA362E00983DF7 /* TableProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB646B22DA362E00983DF7 /* TableProtocols.swift */; };
+		33BB646E22DA362E00983DF7 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB646C22DA362E00983DF7 /* TableDataSource.swift */; };
+		33BB647222DA368D00983DF7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB647122DA368D00983DF7 /* Enums.swift */; };
+		33BB647422DA377B00983DF7 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB647322DA377B00983DF7 /* UITableViewExtensions.swift */; };
+		33BB647622DA37C200983DF7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB647522DA37C200983DF7 /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,7 @@
 /* Begin PBXFileReference section */
 		3350B9A922D22BF500392CC7 /* GenericTableDataSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericTableDataSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3350B9AC22D22BF500392CC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3350B9AE22D22BF500392CC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3350B9AE22D22BF500392CC7 /* ExampleTypesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTypesVC.swift; sourceTree = "<group>"; };
 		3350B9B122D22BF500392CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3350B9B322D22BF600392CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3350B9B622D22BF600392CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,15 @@
 		3350B9C822D22BF700392CC7 /* GenericTableDataSourceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericTableDataSourceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3350B9CC22D22BF700392CC7 /* GenericTableDataSourceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableDataSourceUITests.swift; sourceTree = "<group>"; };
 		3350B9CE22D22BF700392CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33BA9DC922DCE7E90025C664 /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
+		33BA9DCB22DCE84C0025C664 /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
+		33BA9DCD22DCF1120025C664 /* Example01VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example01VC.swift; sourceTree = "<group>"; };
+		33BA9DCF22DCF1640025C664 /* Example01Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example01Model.swift; sourceTree = "<group>"; };
+		33BB646B22DA362E00983DF7 /* TableProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableProtocols.swift; sourceTree = "<group>"; };
+		33BB646C22DA362E00983DF7 /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		33BB647122DA368D00983DF7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		33BB647322DA377B00983DF7 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		33BB647522DA37C200983DF7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +115,10 @@
 		3350B9AB22D22BF500392CC7 /* GenericTableDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				3350B9DA22D22C9E00392CC7 /* Sources */,
+				33BA9DC322DCE5C70025C664 /* MVC */,
 				3350B9AC22D22BF500392CC7 /* AppDelegate.swift */,
-				3350B9AE22D22BF500392CC7 /* ViewController.swift */,
-				3350B9B022D22BF500392CC7 /* Main.storyboard */,
 				3350B9B322D22BF600392CC7 /* Assets.xcassets */,
-				3350B9B522D22BF600392CC7 /* LaunchScreen.storyboard */,
 				3350B9B822D22BF600392CC7 /* Info.plist */,
 			);
 			path = GenericTableDataSource;
@@ -123,6 +140,72 @@
 				3350B9CE22D22BF700392CC7 /* Info.plist */,
 			);
 			path = GenericTableDataSourceUITests;
+			sourceTree = "<group>";
+		};
+		3350B9DA22D22C9E00392CC7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				33BB646C22DA362E00983DF7 /* TableDataSource.swift */,
+				33BB646B22DA362E00983DF7 /* TableProtocols.swift */,
+				33BB647122DA368D00983DF7 /* Enums.swift */,
+				33BB647322DA377B00983DF7 /* UITableViewExtensions.swift */,
+				33BB647522DA37C200983DF7 /* Reusable.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		33BA9DC322DCE5C70025C664 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				33BA9DC422DCE5C70025C664 /* Models */,
+				33BA9DC522DCE5C70025C664 /* Controllers */,
+				33BA9DC622DCE5C70025C664 /* Views */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		33BA9DC422DCE5C70025C664 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33BA9DCB22DCE84C0025C664 /* ExampleModel.swift */,
+				33BA9DCF22DCF1640025C664 /* Example01Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33BA9DC522DCE5C70025C664 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3350B9AE22D22BF500392CC7 /* ExampleTypesVC.swift */,
+				33BA9DCD22DCF1120025C664 /* Example01VC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		33BA9DC622DCE5C70025C664 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33BA9DC822DCE6060025C664 /* CellClasses */,
+				33BA9DC722DCE6060025C664 /* XIBs */,
+				3350B9B022D22BF500392CC7 /* Main.storyboard */,
+				3350B9B522D22BF600392CC7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		33BA9DC722DCE6060025C664 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		33BA9DC822DCE6060025C664 /* CellClasses */ = {
+			isa = PBXGroup;
+			children = (
+				33BA9DC922DCE7E90025C664 /* ExampleCell.swift */,
+			);
+			path = CellClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +339,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3350B9AF22D22BF500392CC7 /* ViewController.swift in Sources */,
+				33BA9DCE22DCF1120025C664 /* Example01VC.swift in Sources */,
+				33BA9DCA22DCE7E90025C664 /* ExampleCell.swift in Sources */,
+				3350B9AF22D22BF500392CC7 /* ExampleTypesVC.swift in Sources */,
+				33BA9DCC22DCE84C0025C664 /* ExampleModel.swift in Sources */,
+				33BB647222DA368D00983DF7 /* Enums.swift in Sources */,
 				3350B9AD22D22BF500392CC7 /* AppDelegate.swift in Sources */,
+				33BB647422DA377B00983DF7 /* UITableViewExtensions.swift in Sources */,
+				33BB646D22DA362E00983DF7 /* TableProtocols.swift in Sources */,
+				33BB646E22DA362E00983DF7 /* TableDataSource.swift in Sources */,
+				33BA9DD022DCF1640025C664 /* Example01Model.swift in Sources */,
+				33BB647622DA37C200983DF7 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
