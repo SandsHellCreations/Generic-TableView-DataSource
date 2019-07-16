@@ -34,6 +34,9 @@ class Example01Model {
                                "profile_04"),
                 Example01Model("Clay Jensen",
                                "Clay Jensen is a fictional character created by author Jay Asher. He is the main character in Thirteen Reasons Why, a novel written for teenagers where a girl, Hannah Baker commits suicide.",
-                               "profile_05") ]
+                               "profile_05"),
+                Example01Model("Harley Quinn",
+                               "Harley Quinn is a fictional character appearing in comic books published by DC Comics. The character was created by Paul Dini and Bruce Timm, and first appeared in Batman: The Animated Series in September 1992.",
+                               "profile_06") ]
     }
 }

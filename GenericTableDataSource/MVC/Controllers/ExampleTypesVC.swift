@@ -13,7 +13,9 @@ class ExampleTypesVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var dataSource: TableDataSource<DefaultHeaderFooterModel<ExampleModel>, DefaultCellModel<ExampleModel>, ExampleModel>?
+    private var dataSource: TableDataSource<DefaultHeaderFooterModel<ExampleModel>,
+                                            DefaultCellModel<ExampleModel>,
+                                            ExampleModel>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class ExampleTypesVC: UIViewController {
     }
 
     private func configureTableView() {
+        
         dataSource = TableDataSource<DefaultHeaderFooterModel<ExampleModel>, DefaultCellModel<ExampleModel>, ExampleModel>.init(.SingleListing(items: ExampleModel.getExampleTypes(), identifier: ExampleCell.identfier, height: UITableView.automaticDimension), tableView)
         
         dataSource?.configureCell = { (cell, item, indexPath) in
@@ -28,9 +31,29 @@ class ExampleTypesVC: UIViewController {
         }
         
         dataSource?.didSelectRow = { (indexPath, item) in
-            print(item?.model?.subTitle ?? "")
+            switch indexPath.row {
+            case 0: // Example 01 VC
+                let destVC = Storyboard<Example01VC>.Main.instantiateVC()
+                self.navigationController?.pushViewController(destVC, animated: true)
+            case 1: // Example 02 VC
+                let destVC = Storyboard<Example02VC>.Main.instantiateVC()
+                self.navigationController?.pushViewController(destVC, animated: true)
+            default:
+                break
+            }
         }
     }
 
 }
 
+
+
+enum Storyboard<T : UIViewController>: String {
+    case Main = "Main"
+    
+    func instantiateVC() -> T {
+        let sb = UIStoryboard(name: self.rawValue, bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: String(describing: T.self)) as! T
+        return vc
+    }
+}

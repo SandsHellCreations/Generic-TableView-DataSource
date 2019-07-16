@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MhY-xf-dGz">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MhY-xf-dGz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                 <prototypes>
@@ -64,7 +64,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MhY-xf-dGz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8eA-H1-I2Q"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MhY-xf-dGz" secondAttribute="bottom" id="HTH-tH-uCl"/>
+                            <constraint firstAttribute="bottom" secondItem="MhY-xf-dGz" secondAttribute="bottom" id="HTH-tH-uCl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MhY-xf-dGz" secondAttribute="trailing" id="hfh-Zr-7wq"/>
                             <constraint firstItem="MhY-xf-dGz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iFP-XM-Njf"/>
                         </constraints>
@@ -78,6 +78,85 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="595.6521739130435" y="136.60714285714286"/>
+        </scene>
+        <!--Example01-->
+        <scene sceneID="3Jd-pt-oql">
+            <objects>
+                <viewController storyboardIdentifier="Example01VC" title="Example01" id="QiD-5t-xQs" customClass="Example01VC" customModule="GenericTableDataSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VOg-a5-EGb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ftn-Hu-AgA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Example01Cell" rowHeight="204" id="t9c-pR-ZfX" customClass="Example01Cell" customModule="GenericTableDataSource" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="204"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t9c-pR-ZfX" id="8iV-SM-8Yz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Felicity Smoak" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBj-pg-QPB">
+                                                    <rect key="frame" x="182" y="8" width="212" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydp-xP-Ox7">
+                                                    <rect key="frame" x="182" y="29.5" width="212" height="117"/>
+                                                    <string key="text">Felicity Smoak is a fictional character appearing in comics published by DC Comics. Her first appearance was in The Fury of Firestorm #23, created by writer Gerry Conway and artist Rafael Kayanan.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_01" translatesAutoresizingMaskIntoConstraints="NO" id="bJ9-Dy-jSZ">
+                                                    <rect key="frame" x="20" y="8" width="154" height="188"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="bJ9-Dy-jSZ" secondAttribute="height" multiplier="9:11" id="xt0-la-MTo"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ydp-xP-Ox7" firstAttribute="trailing" secondItem="wBj-pg-QPB" secondAttribute="trailing" id="0bx-nA-Q7O"/>
+                                                <constraint firstAttribute="bottom" secondItem="bJ9-Dy-jSZ" secondAttribute="bottom" constant="8" id="2Y1-Pf-jlz"/>
+                                                <constraint firstItem="Ydp-xP-Ox7" firstAttribute="top" secondItem="wBj-pg-QPB" secondAttribute="bottom" constant="2" id="Ch0-LB-Q9B"/>
+                                                <constraint firstItem="wBj-pg-QPB" firstAttribute="leading" secondItem="bJ9-Dy-jSZ" secondAttribute="trailing" constant="8" id="F2z-R1-zs7"/>
+                                                <constraint firstItem="wBj-pg-QPB" firstAttribute="top" secondItem="bJ9-Dy-jSZ" secondAttribute="top" id="G4i-aJ-wMa"/>
+                                                <constraint firstItem="bJ9-Dy-jSZ" firstAttribute="leading" secondItem="8iV-SM-8Yz" secondAttribute="leading" constant="20" symbolic="YES" id="IDe-ae-EmX"/>
+                                                <constraint firstAttribute="trailing" secondItem="wBj-pg-QPB" secondAttribute="trailing" constant="20" symbolic="YES" id="TeE-gS-nSG"/>
+                                                <constraint firstItem="bJ9-Dy-jSZ" firstAttribute="top" secondItem="8iV-SM-8Yz" secondAttribute="top" constant="8" id="YYb-gB-PaS"/>
+                                                <constraint firstItem="Ydp-xP-Ox7" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="bJ9-Dy-jSZ" secondAttribute="bottom" id="bEL-ov-m5P"/>
+                                                <constraint firstItem="Ydp-xP-Ox7" firstAttribute="leading" secondItem="wBj-pg-QPB" secondAttribute="leading" id="sP5-Kb-RQe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgView" destination="bJ9-Dy-jSZ" id="T0E-jB-78e"/>
+                                            <outlet property="lblDesc" destination="Ydp-xP-Ox7" id="L1z-t9-oCP"/>
+                                            <outlet property="lblTitle" destination="wBj-pg-QPB" id="aiy-UC-WgW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ftn-Hu-AgA" secondAttribute="bottom" id="5Qe-TK-JA5"/>
+                            <constraint firstItem="ftn-Hu-AgA" firstAttribute="top" secondItem="GXy-Km-1kg" secondAttribute="top" id="Ts8-e4-H8n"/>
+                            <constraint firstItem="GXy-Km-1kg" firstAttribute="trailing" secondItem="ftn-Hu-AgA" secondAttribute="trailing" id="hmn-qS-HGA"/>
+                            <constraint firstItem="ftn-Hu-AgA" firstAttribute="leading" secondItem="GXy-Km-1kg" secondAttribute="leading" id="q5f-BV-zOS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GXy-Km-1kg"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="ftn-Hu-AgA" id="UC7-Sw-ceg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LE3-H6-Qyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1249.2753623188407" y="136.60714285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VRW-hG-R0t">
@@ -97,5 +176,87 @@
             </objects>
             <point key="canvasLocation" x="-133.33333333333334" y="136.60714285714286"/>
         </scene>
+        <!--Example02-->
+        <scene sceneID="LVc-yS-Cwo">
+            <objects>
+                <viewController storyboardIdentifier="Example02VC" title="Example02" id="6Oe-Ky-jQj" customClass="Example02VC" customModule="GenericTableDataSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gwp-9j-fNS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o4q-ft-z3f">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Example01Cell" rowHeight="204" id="b1c-Ne-Edt" customClass="Example01Cell" customModule="GenericTableDataSource" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="204"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b1c-Ne-Edt" id="L0y-au-fcy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Felicity Smoak" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dr-wv-lDb">
+                                                    <rect key="frame" x="182" y="8" width="212" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1v-rl-Iqd">
+                                                    <rect key="frame" x="182" y="29.5" width="212" height="117"/>
+                                                    <string key="text">Felicity Smoak is a fictional character appearing in comics published by DC Comics. Her first appearance was in The Fury of Firestorm #23, created by writer Gerry Conway and artist Rafael Kayanan.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_01" translatesAutoresizingMaskIntoConstraints="NO" id="i6Y-5A-zkH">
+                                                    <rect key="frame" x="20" y="8" width="154" height="188"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="i6Y-5A-zkH" secondAttribute="height" multiplier="9:11" id="Vsm-d9-Rzb"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="i6Y-5A-zkH" firstAttribute="leading" secondItem="L0y-au-fcy" secondAttribute="leading" constant="20" symbolic="YES" id="250-JB-yIE"/>
+                                                <constraint firstItem="e1v-rl-Iqd" firstAttribute="leading" secondItem="5dr-wv-lDb" secondAttribute="leading" id="6Ay-dz-RgM"/>
+                                                <constraint firstItem="e1v-rl-Iqd" firstAttribute="trailing" secondItem="5dr-wv-lDb" secondAttribute="trailing" id="UTv-da-AS0"/>
+                                                <constraint firstAttribute="bottom" secondItem="i6Y-5A-zkH" secondAttribute="bottom" constant="8" id="Zs4-nz-0nE"/>
+                                                <constraint firstItem="i6Y-5A-zkH" firstAttribute="top" secondItem="L0y-au-fcy" secondAttribute="top" constant="8" id="bOh-dX-whS"/>
+                                                <constraint firstAttribute="trailing" secondItem="5dr-wv-lDb" secondAttribute="trailing" constant="20" symbolic="YES" id="cab-YE-VmM"/>
+                                                <constraint firstItem="e1v-rl-Iqd" firstAttribute="top" secondItem="5dr-wv-lDb" secondAttribute="bottom" constant="2" id="j1c-Ns-mU2"/>
+                                                <constraint firstItem="5dr-wv-lDb" firstAttribute="leading" secondItem="i6Y-5A-zkH" secondAttribute="trailing" constant="8" id="lTv-1g-Y17"/>
+                                                <constraint firstItem="e1v-rl-Iqd" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="i6Y-5A-zkH" secondAttribute="bottom" id="nl9-QO-vIW"/>
+                                                <constraint firstItem="5dr-wv-lDb" firstAttribute="top" secondItem="i6Y-5A-zkH" secondAttribute="top" id="no1-IO-MtL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgView" destination="i6Y-5A-zkH" id="eQI-6m-NDk"/>
+                                            <outlet property="lblDesc" destination="e1v-rl-Iqd" id="9Rc-3s-pNM"/>
+                                            <outlet property="lblTitle" destination="5dr-wv-lDb" id="rmc-8G-BEk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o4q-ft-z3f" firstAttribute="top" secondItem="ea1-Me-5Zn" secondAttribute="top" id="gal-GC-ha9"/>
+                            <constraint firstItem="o4q-ft-z3f" firstAttribute="leading" secondItem="ea1-Me-5Zn" secondAttribute="leading" id="oNc-46-r9Z"/>
+                            <constraint firstItem="ea1-Me-5Zn" firstAttribute="trailing" secondItem="o4q-ft-z3f" secondAttribute="trailing" id="wdm-tW-Vqn"/>
+                            <constraint firstAttribute="bottom" secondItem="o4q-ft-z3f" secondAttribute="bottom" id="zXL-1Z-NSX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ea1-Me-5Zn"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="o4q-ft-z3f" id="Vys-M6-hif"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2On-jM-dwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1874" y="137"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="profile_01" width="2450" height="2625"/>
+    </resources>
 </document>
