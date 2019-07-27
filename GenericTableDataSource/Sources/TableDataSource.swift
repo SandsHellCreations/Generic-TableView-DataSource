@@ -128,10 +128,7 @@ class TableDataSource<T : HeaderFooterModelProvider, U: CellModelProvider, Z>: N
   
   internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     let item = items[section]
-    if item.property?.type != .Header {
-        return nil
-    }
-    guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: item.property?.identifier ?? "") else {
+    guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: item.headerProperty?.identifier ?? "") else {
       return nil
     }
     configureHeaderFooter?(section, item, headerView)
@@ -147,10 +144,7 @@ class TableDataSource<T : HeaderFooterModelProvider, U: CellModelProvider, Z>: N
   
   internal func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
     let item = items[section]
-    if item.property?.type != .Footer {
-        return nil
-    }
-    guard let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: item.property?.identifier ?? "") else {
+    guard let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: item.footerProperty?.identifier ?? "") else {
       return nil
     }
     configureHeaderFooter?(section, item, footerView)
@@ -158,11 +152,11 @@ class TableDataSource<T : HeaderFooterModelProvider, U: CellModelProvider, Z>: N
   }
   
   internal func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    return items[section].property?.height ?? 0.0001
+    return items[section].headerProperty?.height ?? 0.0001
   }
   
   internal func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-    return items[section].property?.height ?? 0.0001
+    return items[section].footerProperty?.height ?? 0.0001
   }
   
   internal func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

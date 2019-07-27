@@ -22,9 +22,9 @@ class Example01Cell: UITableViewCell, ReusableCell {
             imgView.layer.cornerRadius = 16.0
             imgView.layer.borderColor = UIColor.darkGray.cgColor
             imgView.layer.borderWidth = 0.8
-            imgView.image = UIImage(named: item?.model?.imageName ?? "")
-            lblTitle.text = item?.model?.name ?? ""
-            lblDesc.text = item?.model?.description ?? ""
+            imgView.image = UIImage(named: item?.property?.model?.imageName ?? "")
+            lblTitle.text = item?.property?.model?.name ?? ""
+            lblDesc.text = item?.property?.model?.description ?? ""
         }
     }
 }

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TVSeriesHeaderView" customModule="GenericTableDataSource" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTp-F9-KRQ">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="58"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YC2-kL-eSS">
+                        <rect key="frame" x="0.0" y="0.0" width="379" height="58"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbO-34-mpD">
+                    <rect key="frame" x="0.0" y="0.0" width="16" height="58"/>
+                    <color key="backgroundColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="PP4-IN-w8f"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lb6-wQ-LQf">
+                    <rect key="frame" x="16" y="0.0" width="8" height="58"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.20000000000000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="0x7-2G-cnM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWC-1O-Sws">
+                    <rect key="frame" x="24" y="0.0" width="4" height="58"/>
+                    <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="rfK-iT-etO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcb-7l-7Pj">
+                    <rect key="frame" x="28" y="0.0" width="2" height="58"/>
+                    <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="hCC-1E-LnZ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sod-jL-9L5">
+                    <rect key="frame" x="46" y="0.0" width="313" height="58"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="TVSeriesHeaderView"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sod-jL-9L5" secondAttribute="trailing" constant="20" id="1Qa-Jv-E6g"/>
+                <constraint firstItem="bcb-7l-7Pj" firstAttribute="bottom" secondItem="PWC-1O-Sws" secondAttribute="bottom" id="4an-Yu-kAi"/>
+                <constraint firstItem="mTp-F9-KRQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9yb-MI-WKz"/>
+                <constraint firstItem="PWC-1O-Sws" firstAttribute="leading" secondItem="Lb6-wQ-LQf" secondAttribute="trailing" id="Dj4-iv-fCo"/>
+                <constraint firstItem="PWC-1O-Sws" firstAttribute="top" secondItem="Lb6-wQ-LQf" secondAttribute="top" id="IF0-Ja-Ka4"/>
+                <constraint firstItem="bcb-7l-7Pj" firstAttribute="leading" secondItem="PWC-1O-Sws" secondAttribute="trailing" id="Jhd-xD-8p2"/>
+                <constraint firstAttribute="bottom" secondItem="mTp-F9-KRQ" secondAttribute="bottom" id="NlV-IU-Otm"/>
+                <constraint firstItem="mTp-F9-KRQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pud-cw-ZVa"/>
+                <constraint firstItem="Sod-jL-9L5" firstAttribute="leading" secondItem="bcb-7l-7Pj" secondAttribute="trailing" constant="16" id="Qef-Kv-L5w"/>
+                <constraint firstItem="gbO-34-mpD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XwN-Nm-FhF"/>
+                <constraint firstAttribute="trailing" secondItem="mTp-F9-KRQ" secondAttribute="trailing" id="bPi-7n-Ph4"/>
+                <constraint firstAttribute="bottom" secondItem="Sod-jL-9L5" secondAttribute="bottom" id="cc1-5E-QZZ"/>
+                <constraint firstItem="Lb6-wQ-LQf" firstAttribute="leading" secondItem="gbO-34-mpD" secondAttribute="trailing" id="d9r-J7-E19"/>
+                <constraint firstItem="PWC-1O-Sws" firstAttribute="bottom" secondItem="Lb6-wQ-LQf" secondAttribute="bottom" id="eWY-pv-Uqd"/>
+                <constraint firstItem="bcb-7l-7Pj" firstAttribute="top" secondItem="PWC-1O-Sws" secondAttribute="top" id="f9o-De-tZy"/>
+                <constraint firstItem="Sod-jL-9L5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fkv-lM-bzj"/>
+                <constraint firstItem="Lb6-wQ-LQf" firstAttribute="top" secondItem="gbO-34-mpD" secondAttribute="top" id="jfl-To-tcD"/>
+                <constraint firstItem="Lb6-wQ-LQf" firstAttribute="bottom" secondItem="gbO-34-mpD" secondAttribute="bottom" id="mOc-fL-VKb"/>
+                <constraint firstItem="gbO-34-mpD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oGp-2M-sfI"/>
+                <constraint firstAttribute="bottom" secondItem="gbO-34-mpD" secondAttribute="bottom" id="wO7-uJ-naj"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lblTitle" destination="Sod-jL-9L5" id="xjI-px-szH"/>
+            </connections>
+            <point key="canvasLocation" x="112.31884057971016" y="-46.205357142857139"/>
+        </view>
+    </objects>
+</document>

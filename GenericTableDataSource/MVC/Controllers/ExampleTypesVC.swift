@@ -38,6 +38,15 @@ class ExampleTypesVC: UIViewController {
             case 1: // Example 02 VC
                 let destVC = Storyboard<Example02VC>.Main.instantiateVC()
                 self.navigationController?.pushViewController(destVC, animated: true)
+            case 2: // Example 03 VC
+                let destVC = Storyboard<Example03VC>.Main.instantiateVC()
+                self.navigationController?.pushViewController(destVC, animated: true)
+            case 3: // Example 04 VC
+                let destVC = Storyboard<Example04VC>.Main.instantiateVC()
+                self.navigationController?.pushViewController(destVC, animated: true)
+            case 4: // Example 05 VC
+                let destVC = Storyboard<Example05VC>.Main.instantiateVC()
+                self.navigationController?.pushViewController(destVC, animated: true)
             default:
                 break
             }

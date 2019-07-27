@@ -18,8 +18,8 @@ class ExampleCell: UITableViewCell, ReusableCell {
     
     var item: DefaultCellModel<ExampleModel>? {
         didSet {
-            lblTitle.text = item?.model?.title ?? ""
-            lblSubTitle.text = item?.model?.subTitle ?? ""
+            lblTitle.text = item?.property?.model?.title ?? ""
+            lblSubTitle.text = item?.property?.model?.subTitle ?? ""
         }
     }
 

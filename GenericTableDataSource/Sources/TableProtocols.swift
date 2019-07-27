@@ -12,54 +12,63 @@ import UIKit
 
 protocol HeaderFooterModelProvider {
     
-    associatedtype UITableViewCellModelType : CellModelProvider
-    associatedtype UITableHeaderFooterViewModelType
+    typealias HeaderProperty = (identifier: String?, height: CGFloat?, model: HeaderModelType?)
+    typealias FooterProperty = (identifier: String?, height: CGFloat?, model: FooterModelType?)
     
-    var property: (identifier: String, height: CGFloat, type: HeaderFooter)? { get set }
-    var items: [UITableViewCellModelType]? { get set }
-    var model: UITableHeaderFooterViewModelType? { get set }
+    associatedtype CellModelType : CellModelProvider
+    associatedtype HeaderModelType
+    associatedtype FooterModelType
     
+    var headerProperty: HeaderProperty? { get set }
+    var footerProperty: FooterProperty? { get set }
+    var items: [CellModelType]? { get set }
     
-    init(_ _property: (identifier: String, height: CGFloat, type: HeaderFooter)?, _ _items: [UITableViewCellModelType]?, _ _model: UITableHeaderFooterViewModelType?)
+    init(_ _header: HeaderProperty?, _ _footer: FooterProperty?, _ _items: [CellModelType]?)
+    
 }
 
 protocol CellModelProvider {
     
-    associatedtype UITableViewCellModelType
+    typealias Property = (identifier: String, height: CGFloat, model: CellModelType?)
     
-    var property: (identifier: String, height: CGFloat)? { get set }
-    var model: UITableViewCellModelType? { get set }
+    associatedtype CellModelType
     
-    init(_ _property: (identifier: String, height: CGFloat)?, _ _model: UITableViewCellModelType?)
+    var property: Property? { get set }
+    
+    init(_ _property: Property?)
 }
 
 
 class DefaultHeaderFooterModel<T>: HeaderFooterModelProvider {
+    
+    typealias HeaderModelType = Any
+    
+    typealias FooterModelType = Any
+    
+    typealias CellModelType = DefaultCellModel<T>
+    
+    var headerProperty: HeaderProperty?
+    
+    var footerProperty: FooterProperty?
+    
+    var items: [CellModelType]?
+    
 
-    var property: (identifier: String, height: CGFloat, type: HeaderFooter)?
-    
-    var items: [UITableViewCellModelType]?
-    
-    var model: Any?
-    
-    typealias UITableViewCellModelType = DefaultCellModel<T>
-    typealias UITableHeaderFooterViewModelType = Any
-
-    required init(_ _property: (identifier: String, height: CGFloat, type: HeaderFooter)?, _ _items: [UITableViewCellModelType]?, _ _model: UITableHeaderFooterViewModelType?) {
-        property = _property
+    required init(_ _header: HeaderProperty?, _ _footer: FooterProperty?, _ _items: [DefaultCellModel<T>]?) {
+        headerProperty = _header
+        footerProperty = _footer
         items = _items
-        model = _model
     }
     
     class func getSingleListingItems(array: [T]?, identifer: String, height: CGFloat) -> [DefaultHeaderFooterModel<T>] {
      
-        var protocolConformingArray = [UITableViewCellModelType]()
+        var protocolConformingArray = [CellModelType]()
         
         array?.forEach {
-            protocolConformingArray.append(UITableViewCellModelType.init((identifer, height), $0))
+            protocolConformingArray.append(CellModelType.init((identifer, height, $0)))
         }
         
-        let section1 = [DefaultHeaderFooterModel<T>.init(("", 0.0001, .Header), protocolConformingArray, nil)]
+        let section1 = [DefaultHeaderFooterModel<T>.init(nil, nil, protocolConformingArray)]
         
         return section1
         
@@ -69,15 +78,12 @@ class DefaultHeaderFooterModel<T>: HeaderFooterModelProvider {
 
 class DefaultCellModel<T>: CellModelProvider {
     
-    var property: (identifier: String, height: CGFloat)?
+    typealias CellModelType = T
+
+    var property: (identifier: String, height: CGFloat, model: T?)?
     
-    var model: UITableViewCellModelType?
-    
-    typealias UITableViewCellModelType = T
-    
-    required init(_ _property: (identifier: String, height: CGFloat)?, _ _model: UITableViewCellModelType?) {
+    required init(_ _property: (identifier: String, height: CGFloat, model: T?)?) {
         property = _property
-        model = _model
     }
     
 }

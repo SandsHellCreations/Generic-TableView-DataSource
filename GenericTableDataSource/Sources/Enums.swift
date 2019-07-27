@@ -8,11 +8,6 @@
 
 import UIKit
 
-enum HeaderFooter {
-    case Header
-    case Footer
-}
-
 enum TableType<T : HeaderFooterModelProvider, U : CellModelProvider, SingleListingModelType> {
     case SingleListing(items: [SingleListingModelType], identifier: String, height: CGFloat)
     case MultipleSection(items: [T])
