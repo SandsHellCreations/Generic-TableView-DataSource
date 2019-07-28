@@ -23,6 +23,8 @@
 		3350B9CD22D22BF700392CC7 /* GenericTableDataSourceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350B9CC22D22BF700392CC7 /* GenericTableDataSourceUITests.swift */; };
 		33B5644A22DE37E200EA569E /* Example01Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B5644922DE37E200EA569E /* Example01Cell.swift */; };
 		33B5644C22DE454200EA569E /* Example02VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B5644B22DE454200EA569E /* Example02VC.swift */; };
+		33B8920622ED6C10000340DE /* Example06VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8920522ED6C10000340DE /* Example06VC.swift */; };
+		33B8920822ED778B000340DE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B8920722ED778B000340DE /* GradientView.swift */; };
 		33BA9DCA22DCE7E90025C664 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA9DC922DCE7E90025C664 /* ExampleCell.swift */; };
 		33BA9DCC22DCE84C0025C664 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA9DCB22DCE84C0025C664 /* ExampleModel.swift */; };
 		33BA9DCE22DCF1120025C664 /* Example01VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA9DCD22DCF1120025C664 /* Example01VC.swift */; };
@@ -32,6 +34,12 @@
 		33BB647222DA368D00983DF7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB647122DA368D00983DF7 /* Enums.swift */; };
 		33BB647422DA377B00983DF7 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB647322DA377B00983DF7 /* UITableViewExtensions.swift */; };
 		33BB647622DA37C200983DF7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB647522DA37C200983DF7 /* Reusable.swift */; };
+		33D2A4D322ED7C430068BF7D /* StragerThingsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D2A4D222ED7C430068BF7D /* StragerThingsHeaderView.xib */; };
+		33D2A4D522ED7C870068BF7D /* StragerThingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D2A4D422ED7C870068BF7D /* StragerThingsHeaderView.swift */; };
+		33D2A4D722ED7E220068BF7D /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D2A4D622ED7E220068BF7D /* DescriptionCell.swift */; };
+		33D2A4D922ED7F350068BF7D /* Example06Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D2A4D822ED7F350068BF7D /* Example06Model.swift */; };
+		33D2A4DB22EDBBD00068BF7D /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D2A4DA22EDBBD00068BF7D /* CharacterCell.swift */; };
+		33D2A4DD22EDCFA20068BF7D /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D2A4DC22EDCFA20068BF7D /* EpisodeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +82,8 @@
 		3350B9CE22D22BF700392CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33B5644922DE37E200EA569E /* Example01Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example01Cell.swift; sourceTree = "<group>"; };
 		33B5644B22DE454200EA569E /* Example02VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example02VC.swift; sourceTree = "<group>"; };
+		33B8920522ED6C10000340DE /* Example06VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example06VC.swift; sourceTree = "<group>"; };
+		33B8920722ED778B000340DE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		33BA9DC922DCE7E90025C664 /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
 		33BA9DCB22DCE84C0025C664 /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		33BA9DCD22DCF1120025C664 /* Example01VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example01VC.swift; sourceTree = "<group>"; };
@@ -83,6 +93,12 @@
 		33BB647122DA368D00983DF7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		33BB647322DA377B00983DF7 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		33BB647522DA37C200983DF7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		33D2A4D222ED7C430068BF7D /* StragerThingsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StragerThingsHeaderView.xib; sourceTree = "<group>"; };
+		33D2A4D422ED7C870068BF7D /* StragerThingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StragerThingsHeaderView.swift; sourceTree = "<group>"; };
+		33D2A4D622ED7E220068BF7D /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		33D2A4D822ED7F350068BF7D /* Example06Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example06Model.swift; sourceTree = "<group>"; };
+		33D2A4DA22EDBBD00068BF7D /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		33D2A4DC22EDCFA20068BF7D /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				331039BF22EC9817007212DB /* TVSeriesHeaderView.swift */,
+				33D2A4D422ED7C870068BF7D /* StragerThingsHeaderView.swift */,
 			);
 			path = HeaderFooterClasses;
 			sourceTree = "<group>";
@@ -144,6 +161,7 @@
 				3350B9DA22D22C9E00392CC7 /* Sources */,
 				33BA9DC322DCE5C70025C664 /* MVC */,
 				3350B9AC22D22BF500392CC7 /* AppDelegate.swift */,
+				33B8920722ED778B000340DE /* GradientView.swift */,
 				3350B9B322D22BF600392CC7 /* Assets.xcassets */,
 				3350B9B822D22BF600392CC7 /* Info.plist */,
 			);
@@ -196,6 +214,7 @@
 				33BA9DCB22DCE84C0025C664 /* ExampleModel.swift */,
 				33BA9DCF22DCF1640025C664 /* Example01Model.swift */,
 				331039C622EC9CB4007212DB /* Example05Model.swift */,
+				33D2A4D822ED7F350068BF7D /* Example06Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +228,7 @@
 				331039BB22EC1507007212DB /* Example03VC.swift */,
 				331039BD22EC33CF007212DB /* Example04VC.swift */,
 				331039C222EC9B75007212DB /* Example05VC.swift */,
+				33B8920522ED6C10000340DE /* Example06VC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				331039CA22ECBAF1007212DB /* TVSeriesHeaderView.xib */,
+				33D2A4D222ED7C430068BF7D /* StragerThingsHeaderView.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -239,6 +260,9 @@
 				33BA9DC922DCE7E90025C664 /* ExampleCell.swift */,
 				33B5644922DE37E200EA569E /* Example01Cell.swift */,
 				331039C422EC9C16007212DB /* ActorCell.swift */,
+				33D2A4D622ED7E220068BF7D /* DescriptionCell.swift */,
+				33D2A4DA22EDBBD00068BF7D /* CharacterCell.swift */,
+				33D2A4DC22EDCFA20068BF7D /* EpisodeCell.swift */,
 			);
 			path = CellClasses;
 			sourceTree = "<group>";
@@ -347,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D2A4D322ED7C430068BF7D /* StragerThingsHeaderView.xib in Resources */,
 				331039CB22ECBAF1007212DB /* TVSeriesHeaderView.xib in Resources */,
 				3350B9B722D22BF600392CC7 /* LaunchScreen.storyboard in Resources */,
 				3350B9B422D22BF600392CC7 /* Assets.xcassets in Resources */,
@@ -375,17 +400,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D2A4DB22EDBBD00068BF7D /* CharacterCell.swift in Sources */,
 				33BA9DCE22DCF1120025C664 /* Example01VC.swift in Sources */,
 				33BA9DCA22DCE7E90025C664 /* ExampleCell.swift in Sources */,
+				33D2A4D922ED7F350068BF7D /* Example06Model.swift in Sources */,
 				33B5644C22DE454200EA569E /* Example02VC.swift in Sources */,
+				33B8920622ED6C10000340DE /* Example06VC.swift in Sources */,
 				331039C322EC9B75007212DB /* Example05VC.swift in Sources */,
 				331039BE22EC33CF007212DB /* Example04VC.swift in Sources */,
 				3350B9AF22D22BF500392CC7 /* ExampleTypesVC.swift in Sources */,
 				33BA9DCC22DCE84C0025C664 /* ExampleModel.swift in Sources */,
+				33D2A4D722ED7E220068BF7D /* DescriptionCell.swift in Sources */,
 				33BB647222DA368D00983DF7 /* Enums.swift in Sources */,
 				3350B9AD22D22BF500392CC7 /* AppDelegate.swift in Sources */,
 				33BB647422DA377B00983DF7 /* UITableViewExtensions.swift in Sources */,
+				33B8920822ED778B000340DE /* GradientView.swift in Sources */,
 				33BB646D22DA362E00983DF7 /* TableProtocols.swift in Sources */,
+				33D2A4D522ED7C870068BF7D /* StragerThingsHeaderView.swift in Sources */,
 				331039C522EC9C16007212DB /* ActorCell.swift in Sources */,
 				33BB646E22DA362E00983DF7 /* TableDataSource.swift in Sources */,
 				331039BC22EC1507007212DB /* Example03VC.swift in Sources */,
@@ -394,6 +425,7 @@
 				33BB647622DA37C200983DF7 /* Reusable.swift in Sources */,
 				33B5644A22DE37E200EA569E /* Example01Cell.swift in Sources */,
 				331039C722EC9CB4007212DB /* Example05Model.swift in Sources */,
+				33D2A4DD22EDCFA20068BF7D /* EpisodeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
