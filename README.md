@@ -28,4 +28,22 @@
     }
     ```
 4. Your model class for setting data in UITableViewHeaderFooterView should confirm to **HeaderFooterModelProvider** protocol by inheriting it.
-
+    #### HeaderFooterModelProvider
+    ```
+    protocol HeaderFooterModelProvider {
+    
+        typealias HeaderProperty = (identifier: String?, height: CGFloat?, model: HeaderModelType?)
+        typealias FooterProperty = (identifier: String?, height: CGFloat?, model: FooterModelType?)
+    
+        associatedtype CellModelType : CellModelProvider
+        associatedtype HeaderModelType
+        associatedtype FooterModelType
+    
+        var headerProperty: HeaderProperty? { get set }
+        var footerProperty: FooterProperty? { get set }
+        var items: [CellModelType]? { get set }
+    
+        init(_ _header: HeaderProperty?, _ _footer: FooterProperty?, _ _items: [CellModelType]?)
+    
+    }
+    ```
