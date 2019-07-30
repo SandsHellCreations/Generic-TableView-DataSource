@@ -1,3 +1,4 @@
 <p align="center">
-<img src="https://github.com/iina/iina/raw/master/iina/Assets.xcassets/AppIcon.appiconset/256-1.png" />
+<img src="https://github.com//SandeepSpider811/Generic-TableView-DataSource/blob/master/GenericTableDataSource/Assets.xcassets/Poster.imageset/Poster.png?raw=true" alt="Poster.png" />
 </p>
+
