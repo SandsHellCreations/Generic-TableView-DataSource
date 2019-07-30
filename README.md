@@ -9,3 +9,10 @@
 * Native pull to refresh functionality handled in datasource with UIRefreshControl.
 * Infinite scrolling of tableview is also handled for paging.
 
+## Rules to follow if you've set your mind to use it.
+
+1. Every UITableView class should conform to **ReusableCell** protocol by inheriting it.
+2. Every UITableViewHeaderFooterView class should confirm to **ReusableHeaderFooterView** protocol by inheriting it.
+3. Your model class for setting data in UITableViewHeaderFooterView should confirm to **HeaderFooterModelProvider** protocol by inheriting it.
+4. Your model class for setting data in UITableViewCell should confirm to **CellModelProvider** protocol by inherinting it.
+
