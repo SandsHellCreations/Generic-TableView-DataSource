@@ -14,7 +14,8 @@
 1. Every UITableView class should conform to **ReusableCell** protocol by inheriting it.
 2. Every UITableViewHeaderFooterView class should confirm to **ReusableHeaderFooterView** protocol by inheriting it.
 3. Your model class for setting data in UITableViewCell should confirm to **CellModelProvider** protocol by inherinting it.
-    ```console
+    #### CellModelProvider
+    ```
     protocol CellModelProvider {
 
         typealias Property = (identifier: String, height: CGFloat, model: CellModelType?)
