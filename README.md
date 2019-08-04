@@ -150,6 +150,10 @@
     ```
 3. Table View Data source blocks can be used for further functionality.
     ```
+    dataSource?.configureHeaderFooter = { (section, item, view) in
+        (view as? TVSeriesHeaderView)?.item = item
+    }
+    
     dataSource?.configureCell = { (cell, item, indexPath) in
         (cell as? Example01Cell)?.item = item
     }
