@@ -180,11 +180,11 @@
 [![alt text][4.1]][4]
 [![alt text][5.1]][5]
 
-[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
-[2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
-[3.1]: http://i.imgur.com/0o48UoR.png (github plus icon with padding)
+[1.1]: https://raw.githubusercontent.com/SandeepSpider811/Generic-TableView-DataSource/master/GenericTableDataSource/Assets.xcassets/social_instagram.imageset/social_twitter.png (twitter icon with padding)
+[2.1]: https://raw.githubusercontent.com/SandeepSpider811/Generic-TableView-DataSource/master/GenericTableDataSource/Assets.xcassets/social_instagram.imageset/social_facebook.png (facebook icon with padding)
+[3.1]: https://raw.githubusercontent.com/SandeepSpider811/Generic-TableView-DataSource/master/GenericTableDataSource/Assets.xcassets/social_instagram.imageset/social_github.png (github plus icon with padding)
 [4.1]: https://raw.githubusercontent.com/SandeepSpider811/Generic-TableView-DataSource/master/GenericTableDataSource/Assets.xcassets/social_instagram.imageset/social_instagram.png (Instagram icon with padding)
-[5.1]: https://raw.githubusercontent.com/SandeepSpider811/Generic-TableView-DataSource/master/GenericTableDataSource/Assets.xcassets/social_instagram.imageset/social_mediums.png (Medium icon with padding)
+[5.1]: https://raw.githubusercontent.com/SandeepSpider811/Generic-TableView-DataSource/master/GenericTableDataSource/Assets.xcassets/social_instagram.imageset/social_medium.png (Medium icon with padding)
 
 [1]: https://twitter.com/SandsHell811
 [2]: https://www.facebook.com/Sandeep.kumar811
