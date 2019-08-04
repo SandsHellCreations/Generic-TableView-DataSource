@@ -50,7 +50,8 @@
 ## Code Examples
 1. For single listing with single cell types.
     Consider you have following model.
-    ```class Example01Model {
+    ```
+    class Example01Model {
         var name: String?
         var description: String?
         var imageName: String?
@@ -72,7 +73,8 @@
 
     ```
     Setting data inside cell
-    ```class Example01Cell: UITableViewCell, ReusableCell { //Inheriting Reuasable Cell Protocol
+    ```
+    class Example01Cell: UITableViewCell, ReusableCell { //Inheriting Reuasable Cell Protocol
     
         typealias T = DefaultCellModel<Example01Model> //Declaring type of model to be used
     
@@ -95,7 +97,8 @@
     ```
 2. For multiple section and cell listing.
     We need two models one for section footer and one for cell following rules that we've discussessed above.
-    ```class SeasonHeaderFooterModel: HeaderFooterModelProvider { //conforming HeaderFooterModelProvider protocol
+    ```
+    class SeasonHeaderFooterModel: HeaderFooterModelProvider { //conforming HeaderFooterModelProvider protocol
     
         typealias CellModelType = ActorCellModel //cell model type
     
