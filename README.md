@@ -179,19 +179,16 @@
 [![alt text][3.1]][3]
 [![alt text][4.1]][4]
 [![alt text][5.1]][5]
-[![alt text][6.1]][6]
 
-[1.1]: https://image.flaticon.com/icons/svg/174/174855.svg (twitter icon with padding)
+[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
 [2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
-[3.1]: http://i.imgur.com/yCsTjba.png (google plus icon with padding)
-[4.1]: http://i.imgur.com/YckIOms.png (tumblr icon with padding)
-[5.1]: http://i.imgur.com/1AGmwO3.png (dribbble icon with padding)
-[6.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
+[3.1]: http://i.imgur.com/0o48UoR.png (github plus icon with padding)
+[4.1]: http://i.imgur.com/YckIOms.png (Instagram icon with padding)
+[5.1]: http://i.imgur.com/1AGmwO3.png (Medium icon with padding)
 
-[1]: http://www.twitter.com/carlsednaoui
-[2]: http://www.facebook.com/sednaoui
-[3]: https://plus.google.com/+CarlSednaoui
-[4]: http://carlsed.tumblr.com
-[5]: http://dribbble.com/carlsednaoui
-[6]: http://www.github.com/carlsednaoui
+[1]: https://twitter.com/SandsHell811
+[2]: https://www.facebook.com/Sandeep.kumar811
+[3]: https://github.com/SandeepSpider811
+[4]: https://www.instagram.com/sandshellcreations/
+[5]: https://medium.com/@sandshell811
 
