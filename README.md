@@ -179,6 +179,10 @@
             break
         }
     }
+    
+     dataSource?.didSelectRow = { (indexPath, item) in
+        
+     }
     ```
 ## Contact us for any queries and feature request
 [![alt text][1.1]][1]
