@@ -24,8 +24,8 @@ class ExampleModel {
                 ExampleModel("Example 03", "SingleCell type items listing with pullToRefresh"),
                 ExampleModel("Example 04", "SingleCell type items listing with paging and pullToRefresh both"),
                 ExampleModel("Example 05", "SingleCell type items in each section"),
-                ExampleModel("Example 06", "Different cell type items in one section with multiple sections")]
-        
+                ExampleModel("Example 06", "Different cell type items in one section with multiple sections"),
+                ExampleModel("Example 07", "Leading and trailing swipe actions")]
     }
     
 }

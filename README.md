@@ -17,14 +17,17 @@
     #### CellModelProvider
     ```
     protocol CellModelProvider {
-
+    
         typealias Property = (identifier: String, height: CGFloat, model: CellModelType?)
-
+    
         associatedtype CellModelType
-
+    
         var property: Property? { get set }
-
-        init(_ _property: Property?)
+        var leadingSwipeConfig: SKSwipeActionConfig? { get set }
+        var trailingSwipeConfig: SKSwipeActionConfig? { get set }
+    
+        init(_ _property: Property?, _ _leadingSwipe: SKSwipeActionConfig?, _ _trailingSwipe: SKSwipeActionConfig?)
+        
     }
     ```
 4. Your model class for setting data in UITableViewHeaderFooterView should confirm to **HeaderFooterModelProvider** protocol by inheriting it.
@@ -184,12 +187,73 @@
         
     }
     ```
+    4. Leading and trailing swipe actions.
+    ```
+    protocol CellModelProvider {
+    
+    typealias Property = (identifier: String, height: CGFloat, model: CellModelType?)
+    
+    associatedtype CellModelType
+    
+    var property: Property? { get set }
+    var leadingSwipeConfig: SKSwipeActionConfig? { get set } // used to assign leading actions
+    var trailingSwipeConfig: SKSwipeActionConfig? { get set } // used to assign trailing actions
+    
+    init(_ _property: Property?, _ _leadingSwipe: SKSwipeActionConfig?, _ _trailingSwipe: SKSwipeActionConfig?)
+    
+    }
+    
+    // Internal class handling all actions in datasource
+    class SKSwipeActionConfig {
+    
+        private var actionValues: [(title: String?, image: UIImage?, backGroundColor: UIColor, identifier: String)]?
+        private var swipeActionConfig: UISwipeActionsConfiguration?
+        public var didSelectAction: ((_ identifer: String) -> Void)?
+    
+        init(_ _actions: [(title: String?, image: UIImage?, backGroundColor: UIColor, identifier: String)]) {
+            actionValues = _actions
+            var skActions = [UIContextualAction]()
+    
+            actionValues?.forEach({ (item) in
+                let action = UIContextualAction(style: .normal, title: item.title, handler: { [weak self] (action, view, handler) in
+                    handler(true)
+                    self?.didSelectAction?(item.identifier)
+                })
+                action.backgroundColor = item.backGroundColor
+                action.image = item.image
+                skActions.append(action)
+            })
+    
+            swipeActionConfig = UISwipeActionsConfiguration(actions: skActions)
+            swipeActionConfig?.performsFirstActionWithFullSwipe = true
+        }
+    
+        func getConfig() -> UISwipeActionsConfiguration? {
+            return swipeActionConfig
+        }
+    }
+    ```
+    block that can be used to handle leading and trailing actions.
+    ```
+    dataSource?.editActionForRow = { (indexPath, identifier, action) in
+        switch action {
+            case .Leading:
+                print("Leading action tapped", "Identifer: \(identifier)")
+                // do anything according to identifer if multiple actions
+            case .Trailing:
+                print("Trailing action tapped", "Identifer: \(identifier)")
+                // do anything according to identifer if multiple actions
+        }
+    }
+    ```
+
+    
 ## Contact us for any queries and feature request
-[![alt text][1.1]][1]
-[![alt text][2.1]][2]
-[![alt text][3.1]][3]
-[![alt text][4.1]][4]
-[![alt text][5.1]][5]
+[![Twitter][1.1]][1]
+[![Facebook][2.1]][2]
+[![Github][3.1]][3]
+[![Instagram][4.1]][4]
+[![Medium][5.1]][5]
 
 [1.1]: https://raw.githubusercontent.com/SandeepSpider811/Generic-TableView-DataSource/master/GenericTableDataSource/Assets.xcassets/social_twiiter.imageset/social_twiiter.png (twitter icon with padding)
 [2.1]: https://raw.githubusercontent.com/SandeepSpider811/Generic-TableView-DataSource/master/GenericTableDataSource/Assets.xcassets/social_facebook.imageset/social_facebook.png (facebook icon with padding)

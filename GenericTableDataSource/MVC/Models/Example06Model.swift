@@ -113,13 +113,19 @@ extension STSection {
 }
 
 class STCell: CellModelProvider {
-    
+ 
     typealias CellModelType = StrangerThingCellData
 
     var property: (identifier: String, height: CGFloat, model: StrangerThingCellData?)?
     
-    required init(_ _property: (identifier: String, height: CGFloat, model: StrangerThingCellData?)?) {
+    var leadingSwipeConfig: SKSwipeActionConfig?
+    
+    var trailingSwipeConfig: SKSwipeActionConfig?
+    
+    required init(_ _property: (identifier: String, height: CGFloat, model: StrangerThingCellData?)?, _ _leadingSwipe: SKSwipeActionConfig? = nil, _ _trailingSwipe: SKSwipeActionConfig? = nil) {
         property = _property
+        leadingSwipeConfig = _leadingSwipe
+        trailingSwipeConfig = _trailingSwipe
     }
     
 }

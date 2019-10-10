@@ -24,7 +24,7 @@ class ExampleTypesVC: UIViewController {
 
     private func configureTableView() {
         
-        dataSource = TableDataSource<DefaultHeaderFooterModel<ExampleModel>, DefaultCellModel<ExampleModel>, ExampleModel>.init(.SingleListing(items: ExampleModel.getExampleTypes(), identifier: ExampleCell.identfier, height: UITableView.automaticDimension), tableView)
+        dataSource = TableDataSource<DefaultHeaderFooterModel<ExampleModel>, DefaultCellModel<ExampleModel>, ExampleModel>.init(.SingleListing(items: ExampleModel.getExampleTypes(), identifier: ExampleCell.identfier, height: UITableView.automaticDimension, leadingSwipe: nil, trailingSwipe: nil), tableView)
         
         dataSource?.configureCell = { (cell, item, indexPath) in
             (cell as? ExampleCell)?.item = item
@@ -49,6 +49,9 @@ class ExampleTypesVC: UIViewController {
                 self.navigationController?.pushViewController(destVC, animated: true)
             case 5: // Example 06 VC
                 let destVC = Storyboard<Example06VC>.Main.instantiateVC()
+                self.navigationController?.pushViewController(destVC, animated: true)
+            case 6: // Example 07 VC
+                let destVC = Storyboard<Example07VC>.Main.instantiateVC()
                 self.navigationController?.pushViewController(destVC, animated: true)
             default:
                 break

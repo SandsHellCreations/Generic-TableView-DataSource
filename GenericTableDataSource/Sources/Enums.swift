@@ -9,7 +9,7 @@
 import UIKit
 
 enum TableType<T : HeaderFooterModelProvider, U : CellModelProvider, SingleListingModelType> {
-    case SingleListing(items: [SingleListingModelType], identifier: String, height: CGFloat)
+    case SingleListing(items: [SingleListingModelType], identifier: String, height: CGFloat, leadingSwipe: SKSwipeActionConfig?, trailingSwipe: SKSwipeActionConfig?)
     case MultipleSection(items: [T])
 }
 
@@ -36,4 +36,9 @@ enum ReloadType {
 enum ScrollDirection {
     case Up
     case Down
+}
+
+enum EditAction {
+    case Leading
+    case Trailing
 }

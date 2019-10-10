@@ -339,6 +339,86 @@
             </objects>
             <point key="canvasLocation" x="-59" y="799"/>
         </scene>
+        <!--Example07-->
+        <scene sceneID="Oq4-JY-Muc">
+            <objects>
+                <viewController storyboardIdentifier="Example07VC" title="Example07" id="UvV-wA-z9U" customClass="Example07VC" customModule="GenericTableDataSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hhY-yN-CFb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nEC-tW-R4e">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Example01Cell" rowHeight="204" id="Mp4-hN-Qxc" customClass="Example01Cell" customModule="GenericTableDataSource" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="204"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mp4-hN-Qxc" id="MfL-gh-b4t">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Felicity Smoak" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxs-mT-YC5">
+                                                    <rect key="frame" x="181.5" y="8" width="212.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGL-CR-TTl">
+                                                    <rect key="frame" x="181.5" y="29.5" width="212.5" height="117"/>
+                                                    <string key="text">Felicity Smoak is a fictional character appearing in comics published by DC Comics. Her first appearance was in The Fury of Firestorm #23, created by writer Gerry Conway and artist Rafael Kayanan.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_01" translatesAutoresizingMaskIntoConstraints="NO" id="77Q-WS-VZn">
+                                                    <rect key="frame" x="20" y="8" width="153.5" height="187.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="77Q-WS-VZn" secondAttribute="height" multiplier="9:11" id="YGe-Au-gCt"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="UGL-CR-TTl" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="77Q-WS-VZn" secondAttribute="bottom" id="DVl-jy-6dQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="77Q-WS-VZn" secondAttribute="bottom" constant="8" id="IgG-IU-GMq"/>
+                                                <constraint firstItem="UGL-CR-TTl" firstAttribute="trailing" secondItem="zxs-mT-YC5" secondAttribute="trailing" id="V1r-Tk-rMS"/>
+                                                <constraint firstItem="zxs-mT-YC5" firstAttribute="top" secondItem="77Q-WS-VZn" secondAttribute="top" id="WsH-yb-bec"/>
+                                                <constraint firstItem="UGL-CR-TTl" firstAttribute="top" secondItem="zxs-mT-YC5" secondAttribute="bottom" constant="2" id="eU6-DB-TzH"/>
+                                                <constraint firstItem="77Q-WS-VZn" firstAttribute="leading" secondItem="MfL-gh-b4t" secondAttribute="leading" constant="20" symbolic="YES" id="h2t-bG-aE2"/>
+                                                <constraint firstItem="77Q-WS-VZn" firstAttribute="top" secondItem="MfL-gh-b4t" secondAttribute="top" constant="8" id="qVH-B8-OXe"/>
+                                                <constraint firstAttribute="trailing" secondItem="zxs-mT-YC5" secondAttribute="trailing" constant="20" symbolic="YES" id="rPK-gH-YhL"/>
+                                                <constraint firstItem="UGL-CR-TTl" firstAttribute="leading" secondItem="zxs-mT-YC5" secondAttribute="leading" id="tvO-ra-Nld"/>
+                                                <constraint firstItem="zxs-mT-YC5" firstAttribute="leading" secondItem="77Q-WS-VZn" secondAttribute="trailing" constant="8" id="yvD-ju-XwQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgView" destination="77Q-WS-VZn" id="fFG-Q6-llZ"/>
+                                            <outlet property="lblDesc" destination="UGL-CR-TTl" id="30d-oA-YFt"/>
+                                            <outlet property="lblTitle" destination="zxs-mT-YC5" id="B9K-Cb-AkU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nEC-tW-R4e" firstAttribute="trailing" secondItem="dt4-VE-Wr7" secondAttribute="trailing" id="A3q-zU-tbQ"/>
+                            <constraint firstAttribute="bottom" secondItem="nEC-tW-R4e" secondAttribute="bottom" id="Kb5-Hs-q0Y"/>
+                            <constraint firstItem="nEC-tW-R4e" firstAttribute="top" secondItem="dt4-VE-Wr7" secondAttribute="top" id="bH2-eT-Eff"/>
+                            <constraint firstItem="nEC-tW-R4e" firstAttribute="leading" secondItem="hhY-yN-CFb" secondAttribute="leading" id="byS-Gg-dgX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dt4-VE-Wr7"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="nEC-tW-R4e" id="OhC-Es-eaB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ne0-E9-9Q0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59.420289855072468" y="1456.4732142857142"/>
+        </scene>
         <!--Example04-->
         <scene sceneID="VJT-DC-uDb">
             <objects>
@@ -568,7 +648,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gr-Bx-d9E">
                                                     <rect key="frame" x="20" y="8" width="374" height="84"/>
-                                                    <mutableString key="text">It's the fall of 1984, about a year after Will Byers was found, and he has been plagued by seeing visions of the Upside Down featuring a more dangerous monster. That leads the boy to see a suspiciously friendly new doctor, with the possibility that Will's visions are the result of suffering from PTSD. Nancy deals with survivor's remorse over the death of best friend Barb. Meanwhile, a new sinister entity threatens the Hawkins residents who survived the year-earlier events. New to the town is tomboy Max, who befriends the boys and attracts the romantic interests of Dustin and Lucas.</mutableString>
+                                                    <string key="text">It's the fall of 1984, about a year after Will Byers was found, and he has been plagued by seeing visions of the Upside Down featuring a more dangerous monster. That leads the boy to see a suspiciously friendly new doctor, with the possibility that Will's visions are the result of suffering from PTSD. Nancy deals with survivor's remorse over the death of best friend Barb. Meanwhile, a new sinister entity threatens the Hawkins residents who survived the year-earlier events. New to the town is tomboy Max, who befriends the boys and attracts the romantic interests of Dustin and Lucas.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>

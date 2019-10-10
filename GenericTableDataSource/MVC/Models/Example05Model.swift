@@ -86,7 +86,14 @@ class ActorCellModel: CellModelProvider {
 
     var property: (identifier: String, height: CGFloat, model: Actor?)?
     
-    required init(_ _property: (identifier: String, height: CGFloat, model: Actor?)?) {
+    var leadingSwipeConfig: SKSwipeActionConfig?
+    
+    var trailingSwipeConfig: SKSwipeActionConfig?
+    
+    required init(_ _property: (identifier: String, height: CGFloat, model: Actor?)?, _ _leadingSwipe: SKSwipeActionConfig? = nil, _ _trailingSwipe: SKSwipeActionConfig? = nil) {
         property = _property
+        leadingSwipeConfig = _leadingSwipe
+        trailingSwipeConfig = _trailingSwipe
     }
+
 }

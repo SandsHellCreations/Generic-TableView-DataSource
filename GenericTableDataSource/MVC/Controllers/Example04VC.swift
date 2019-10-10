@@ -28,7 +28,7 @@ class Example04VC: UIViewController {
         
         let height = UIScreen.main.bounds.width * 0.4
         
-        dataSource = TableDataSource<DefaultHeaderFooterModel<Example01Model>, DefaultCellModel<Example01Model>, Example01Model>.init(.SingleListing(items: items, identifier: Example01Cell.identfier, height: height), tableView, true)
+        dataSource = TableDataSource<DefaultHeaderFooterModel<Example01Model>, DefaultCellModel<Example01Model>, Example01Model>.init(.SingleListing(items: items, identifier: Example01Cell.identfier, height: height, leadingSwipe: nil, trailingSwipe: nil), tableView, true)
         
         dataSource?.configureCell = { (cell, item, indexPath) in
             (cell as? Example01Cell)?.item = item
