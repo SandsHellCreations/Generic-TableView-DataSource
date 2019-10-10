@@ -187,7 +187,7 @@
         
     }
     ```
-    4. Leading and trailing swipe actions.
+4. Leading and trailing swipe actions.
     ```
     protocol CellModelProvider {
     
