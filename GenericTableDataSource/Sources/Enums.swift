@@ -31,6 +31,9 @@ enum ReloadType {
     case ReloadSectionTitles
     case None
     case DeleteRowsAt(indexPaths: [IndexPath], animation: UITableView.RowAnimation)
+    case AddRowsAt(indexPaths: [IndexPath], animation: UITableView.RowAnimation, moveToLastIndex: Bool)
+    case InsertSection(indexSet: IndexSet, animation: UITableView.RowAnimation)
+    case DeleteSection(indexSet: IndexSet, animation: UITableView.RowAnimation)
 }
 
 enum ScrollDirection {

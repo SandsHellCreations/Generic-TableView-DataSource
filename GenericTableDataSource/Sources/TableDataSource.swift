@@ -123,6 +123,15 @@ class TableDataSource<T : HeaderFooterModelProvider, U: CellModelProvider, Z>: N
             tableView?.reloadData(success: { [weak self] in
                 self?.isReloadingFinished = true
             })
+        case .AddRowsAt(let indexPaths, let animation, let moveToLastIndex):
+            tableView?.insertRows(at: indexPaths, with: animation)
+            if moveToLastIndex {
+                tableView?.scrollToRow(at: (indexPaths.last)!, at: .bottom, animated: true)
+            }
+        case .InsertSection(let indexSet, let animation):
+            tableView?.insertSections(indexSet, with: animation)
+        case .DeleteSection(let indexSet, let animation):
+            tableView?.deleteSections(indexSet, with: animation)
         }
     }
     
@@ -180,14 +189,14 @@ class TableDataSource<T : HeaderFooterModelProvider, U: CellModelProvider, Z>: N
     internal func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let leadingConfig = items[indexPath.section].items?[indexPath.row].leadingSwipeConfig
-
+        
         leadingConfig?.didSelectAction = { [weak self] (identifier) in
             self?.editActionForRow?(indexPath, identifier, .Leading)
         }
         
         return leadingConfig?.getConfig() ?? UISwipeActionsConfiguration(actions: [])
     }
-
+    
     internal func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let trailingConfig = items[indexPath.section].items?[indexPath.row].trailingSwipeConfig
